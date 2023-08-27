@@ -35,8 +35,8 @@ jobs:
     - name: Build and push Docker Image
       uses: MaximilianoBz/dockerhub-buildpush@v1.0
       with:
-          registry_url: 'docker.io'
-          repository_name: 'demo-app'
+          registry_url: docker.io
+          repository_name: demo-app
           user_name: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
       
